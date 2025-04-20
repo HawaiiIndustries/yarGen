@@ -1153,7 +1153,7 @@ def generate_rules(file_strings, file_opcodes, super_rules, file_info, inverse_s
                 # Check if already printed
                 if cleanedName in printed_rules:
                     printed_rules[cleanedName] += 1
-                    cleanedName = cleanedName + "_" + str(printed_rules[cleanedName])
+                    cleanedName = "ML." + cleanedName + "_" + str(printed_rules[cleanedName])
                 else:
                     printed_rules[cleanedName] = 1
 
@@ -1355,7 +1355,7 @@ def generate_rules(file_strings, file_opcodes, super_rules, file_info, inverse_s
                 # Check if already printed
                 if rule_name in printed_rules:
                     printed_combi[rule_name] += 1
-                    rule_name = rule_name + "_" + str(printed_combi[rule_name])
+                    rule_name = "ML." + rule_name + "_" + str(printed_combi[rule_name])
                 else:
                     printed_combi[rule_name] = 1
 
@@ -1495,7 +1495,7 @@ def generate_rules(file_strings, file_opcodes, super_rules, file_info, inverse_s
                 # Check if already printed
                 if cleanedName in printed_rules:
                     printed_rules[cleanedName] += 1
-                    cleanedName = cleanedName + "_" + str(printed_rules[cleanedName])
+                    cleanedName = "ML." + cleanedName + "_" + str(printed_rules[cleanedName])
                 else:
                     printed_rules[cleanedName] = 1
 
